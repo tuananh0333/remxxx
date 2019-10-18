@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- 
+		đồ án môn học
+		THIẾT KẾ WEB 1
+			thầy Nguyễn Huy Hoàng
+		sinh viên thực hiện: Lê Tuấn Anh
+		
+		đồ án làm theo mẫu từ trang  https://logan-01.myshopify.com/
+		được push lên web theo domain http://tawebproj.epizy.com/
+	-->
+	
+	<!-- RDW -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- My website -->
+	<meta charset="UTF-8">
+	<title>Lê Tuấn Anh - Project web1</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="public/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="public/css/styles.css">
+	<!-- fontawesome -->
+	<script type="text/javascript" src="public/svg-with-js/js/fontawesome-all.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="head-nav">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<span class="navbar-brand phone">Toll Free: 01632025617</span>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav">
+							<li><span class="navbar-brand">Mail Info : </span><a href="#"> tuananh0333@gmail.com</a></li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Home</a></li>
+							<li><a class="contact" href="#">Contact</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#"><i class="fas fa-sign-in-alt"></i></a></li>
+							<li><a href="#"><i class="far fa-user"></i></a></li>
+							<li><a href="#"><i class="far fa-heart"></i></a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</nav>
+		</div>
+		
+		<div class="logo-af">
+			<div class="logo">
+				<img src="public/images/logo.png" alt="logo" class="img-responsive logo-img">
+			</div>
+		</div>
+		
+		<div class="mid-nav">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">Home</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li><a href="#">Separated link</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Trekking <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li><a href="#">Separated link</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Camping <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li><a href="#">Separated link</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+						
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#"><i class="fas fa-search"></i></a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">USD <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li><a href="#">Separated link</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle .dr-bag" data-toggle="dropdown">
+									<i class="fas fa-shopping-bag bag"></i> 
+									<span class="count">
+										0 ITEM
+										<br>
+										0.00
+									</span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li><a href="#">Separated link</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</nav>
+		</div>
+
+		<div class="banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="explore">
+							<h1>
+								Explore Your Destination
+							</h1>
+							<h3>
+								Experience it Live
+							</h3>
+							<a href="#">
+								Shop Now
+							</a>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="pictures">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="public/images/img1.jpg" alt="" class="img-responsive">
+					<div class="sale-off">
+						<p>
+							60%
+						</p>
+						<h2>
+							SALE OFF
+						</h2>
+						<h3>
+							GOLDEN HOLIDAYS
+						</h3>
+						<a href="#">Shop Now</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<img src="public/images/img2.jpg" alt="" class="img-responsive">
+					<div class="sale-off">
+						<p>
+							70%
+						</p>
+						<h2>
+							FLASH SALE
+						</h2>
+						<h3>
+							SUPPER OFFER
+						</h3>
+						<a href="#">Shop Now</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<img src="public/images/img3.jpg" alt="" class="img-responsive">
+					<div class="sale-off">
+						<p>
+							80%
+						</p>
+						<h2>
+							STYLE DAY
+						</h2>
+						<h3>
+							GOOD SALE
+						</h3>
+						<a href="#">Shop Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="news">
+		<div class="row">
+			<div class="col-md-6">
+				<img src="public/images/img4_95575439-395a-4541-82bc-e5ec2832f6c6.jpg" alt="" class="img-responsive">
+			</div>
+			<div class="col-md-6">
+				<h1>
+					NEW ARRIVALS
+				</h1>
+				<img src="public/images/title-img_177x37.png" alt="" class="img-responsive title-img">
+				<div class="items">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="img-bg">
+								<img src="public/images/product6_medium.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="info">
+								<a href="#" class="info">
+									<h4 class="title">
+										Outdoor 
+										<br> 
+										Equipments For
+										<br>
+										Cooking
+									</h4>
+									<h3>
+										$250.00
+									</h3>
+									<h5>
+										$300.00
+									</h5>
+									<span class="stars">
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+									</span>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="img-bg">
+								<img src="public/images/product5_medium.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="info">
+								<a href="#" class="info">
+									<h4 class="title">
+										Drawstring
+										<br> 
+										Knapsacks
+									</h4>
+									<h3>
+										$210.00
+									</h3>
+									<h5>
+										$1000.00
+									</h5>
+									<span class="stars">
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+									</span>
+								</a>
+							</div>
+							<div class="sold-out">
+								SOLD OUT
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="img-bg">
+								<img src="public/images/product29_b0dd5592-6ffb-4f85-9a2d-2d07ec6a4671_large.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="info">
+								<a href="#" class="info">
+									<h4 class="title">
+										Hooded Jackets
+										<br> 
+										For Winter
+									</h4>
+									<h3>
+										$240.00
+									</h3>
+									<h5>
+										$300.00
+									</h5>
+									<span class="stars">
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+										<i class="far fa-star"></i>
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="today">
+		<div class="news">
+			<div class="row">
+				<div class="col-md-6">
+					<h1>
+						NEW IN TODAY
+					</h1>
+					<img src="public/images/title-img_177x37.png" alt="" class="img-responsive title-img">
+					<div class="items">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="img-bg">
+									<img src="public/images/product6_medium.jpg" alt="" class="img-responsive">
+								</div>
+								<div class="info">
+									<a href="#" class="info">
+										<h4 class="title">
+											Outdoor 
+											<br> 
+											Equipments For
+											<br>
+											Cooking
+										</h4>
+										<h3>
+											$250.00
+										</h3>
+										<h5>
+											$300.00
+										</h5>
+										<span class="stars">
+											<i class="far fa-star"></i>
+											<i class="far fa-star"></i>
+											<i class="far fa-star"></i>
+											<i class="far fa-star"></i>
+											<i class="far fa-star"></i>
+										</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="img-bg">
+									<img src="public/images/product29_b0dd5592-6ffb-4f85-9a2d-2d07ec6a4671_large.jpg" alt="" class="img-responsive">
+								</div>
+								<div class="info">
+									<a href="#" class="info">
+										<h4 class="title">
+											Hooded Jackets
+											<br> 
+											For Winter
+										</h4>
+										<h3>
+											$240.00
+										</h3>
+										<h5>
+											$300.00
+										</h5>
+										<span class="stars">
+											<i class="far fa-star"></i>
+											<i class="far fa-star"></i>
+											<i class="far fa-star"></i>
+											<i class="far fa-star"></i>
+											<i class="far fa-star"></i>
+										</span>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="img-bg">
+									<img src="public/images/product11_medium.jpg" alt="" class="img-responsive">
+								</div>
+								<div class="info">
+									<a href="#" class="info">
+										<h4 class="title">
+											Drawstring
+											<br> 
+											Knapsacks
+										</h4>
+										<h3>
+											$210.00
+										</h3>
+										<h5>
+											$1000.00
+										</h5>
+										<span class="stars">
+											<i class="far fa-star"></i>
+											<i class="far fa-star"></i>
+											<i class="far fa-star"></i>
+											<i class="far fa-star"></i>
+											<i class="far fa-star"></i>
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<img src="public/images/img5.jpg" alt="" class="img-responsive">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="bot-banner-back">
+		<div class="bot-banner">
+			<div class="container">
+				<h2>
+					WELLCOME TO LOGAN
+				</h2>
+				<img src="public/images/title-img_177x37.png" alt="" class="img-responsive tit-img">
+				<div class="row" style="padding-bottom: 100px">
+					<div class="col-md-4">
+						<a href="#">
+							<span class="icon">
+								<i class="fas fa-truck"></i>
+							</span>
+							<h3>
+								Free Deliver
+							</h3>
+						</a>
+						<span style="font-size: 1.2em">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque in, explicabo at dolorem asperiores odio, obcaecati nam
+						</span>
+					</div>
+					<div class="col-md-4">
+						<a href="#">
+							<span class="icon">
+								<i class="fas fa-comments"></i>
+							</span>
+							<h3>
+								24/7 Customer Support
+							</h3>
+						</a>
+						<span style="font-size: 1.2em">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quasi dolor cum, sint cupiditate alias
+						</span>
+					</div>
+					<div class="col-md-4">
+						<a href="#">
+							<span class="icon">
+								<i class="fas fa-chevron-circle-left"></i>
+							</span>
+							<h3>
+								Return of Goods
+							</h3>
+						</a>
+						<span style="font-size: 1.2em">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quod a neque ratione sit sint consequatur repellendus
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="last-products">
+		<div class="container">
+			<div class="present">
+				<h2>
+					<b>
+						LASTEST PRODUCTS
+					</b>
+				</h2>
+				<img src="public/images/title-img_177x37.png" alt="" class="img-responsive">
+			</div>
+			<div class="products">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="collect">
+							New In
+						</div>
+						<div class="items">
+							<div class="row">
+								<div class="col-md-4">
+									<img src="public/images/product2_562b2f30-69ea-499f-9d81-99c197bce390_large.jpg" alt="" class="img-responsive">
+								</div>
+								<div class="col-md-8">
+									<div class="item">
+										<a href="#">
+											<h3 class="tit">
+												Backpack Orange
+											</h3>
+											<h3 class="price" style="display: inline">
+												$400.00
+											</h3>
+											<h5>
+												$1,000.00
+											</h5>
+											<span class="stars">
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="items">
+							<div class="row">
+								<div class="col-md-4">
+									<img src="public/images/product11_medium.jpg" alt="" class="img-responsive">
+								</div>
+								<div class="col-md-8">
+									<div class="item">
+										<a href="#">
+											<h3 class="tit">
+												A pair of torch lights
+											</h3>
+											<h3 class="price" style="display: inline">
+												$750.00
+											</h3>
+											<h5>
+												$1,000.00
+											</h5>
+											<span class="stars">
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="collect">
+							On Sale
+						</div>
+						<div class="items">
+							<div class="row">
+								<div class="col-md-4">
+									<img src="public/images/product6_medium.jpg" alt="" class="img-responsive">
+								</div>
+								<div class="col-md-8">
+									<div class="item">
+										<a href="#">
+											<h3 class="tit">
+												Outdoor equipments for cooking
+											</h3>
+											<h3 class="price" style="display: inline">
+												$250.00
+											</h3>
+											<h5>
+												$300.00
+											</h5>
+											<span class="stars">
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="items">
+							<div class="row">
+								<div class="col-md-4">
+									<img src="public/images/product5_medium.jpg" alt="" class="img-responsive">
+								</div>
+								<div class="col-md-8">
+									<div class="item">
+										<a href="#">
+											<h3 class="tit">
+												Drawstring Knapsacks
+											</h3>
+											<h3 class="price" style="display: inline">
+												$210.00
+											</h3>
+											<h5>
+												$1,000.00
+											</h5>
+											<span class="stars">
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="collect">
+							New List
+						</div>
+						<div class="items">
+							<div class="row">
+								<div class="col-md-4">
+									<img src="public/images/product10_ccb59a02-5b16-4b8b-a1dd-6deb9c470557_medium.jpg" alt="" class="img-responsive">
+								</div>
+								<div class="col-md-8">
+									<div class="item">
+										<a href="#">
+											<h3 class="tit">
+												Backpacks for trips
+											</h3>
+											<h3 class="price" style="display: inline">
+												$350.00
+											</h3>
+											<h5>
+												$500.00
+											</h5>
+											<span class="stars">
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="items">
+							<div class="row">
+								<div class="col-md-4">
+									<img src="public/images/product12_medium.jpg" alt="" class="img-responsive">
+								</div>
+								<div class="col-md-8">
+									<div class="item">
+										<a href="#">
+											<h3 class="tit">
+												Binoculars Canisters
+											</h3>
+											<h3 class="price" style="display: inline">
+												$350.00
+											</h3>
+											<h5>
+												$500.00
+											</h5>
+											<span class="stars">
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+												<i class="far fa-star"></i>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="last-blog">
+		<div class="container">
+			<div class="present">
+				<h2>
+					<b>
+						LASTEST FROM BLOG
+					</b>
+				</h2>
+				<img src="public/images/title-img_177x37.png" alt="" class="img-responsive">
+				<div class="arrows">
+					<a href="#" style="margin-right: 10px">
+						<i class="fas fa-chevron-left"></i>
+					</a>
+					<a href="#">
+						<i class="fas fa-chevron-right"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<img src="public/images/blog12_grande.jpg" alt="" class="img-responsive">
+					<div class="date">
+						<div class="day">
+							08 / Feb
+						</div>
+						<div class="hum">
+							<i class="fas fa-user"></i> Ram M
+						</div>
+					</div>
+					<div class="story">
+						<h4>
+							<a href="#">
+								The lone hiker on a trail...
+							</a>
+						</h4>
+						<p class="content">
+							Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt ris...
+						</p>
+						<a href="#" class="read-btn">
+							Read more
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<img src="public/images/blog11_grande.jpg" alt="" class="img-responsive">
+					<div class="date">
+						<div class="day">
+							08 / Feb
+						</div>
+						<div class="hum">
+							<i class="fas fa-user"></i> Ram M
+						</div>
+					</div>
+					<div class="story">
+						<h4>
+							<a href="#">
+								Negotiating a rope bridge
+							</a>
+						</h4>
+						<p class="content">
+							Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt ris...
+						</p>
+						<a href="#" class="read-btn">
+							Read more
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<img src="public/images/blog10_grande.jpg" alt="" class="img-responsive">
+					<div class="date">
+						<div class="day">
+							08 / Feb
+						</div>
+						<div class="hum">
+							<i class="fas fa-user"></i> Ram M
+						</div>
+					</div>
+					<div class="story">
+						<h4>
+							<a href="#">
+								Rock Climbing gears & ropes
+							</a>
+						</h4>
+						<p class="content">
+							Pellentesque posuere orci lobortis scelerisque blandit. Donec id tellus lacinia an, tincidunt ris...
+						</p>
+						<a href="#" class="read-btn">
+							Read more
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="donors">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="item">
+						<a href="#">
+							<img src="public/images/7_250x250.png" alt="" class="img-responsive">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="item">
+						<a href="#">
+							<img src="public/images/8_250x250.png" alt="" class="img-responsive">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="item">
+						<a href="#">
+							<img src="public/images/9_250x250.png" alt="" class="img-responsive">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="item">
+						<a href="#">
+							<img src="public/images/10_250x250.png" alt="" class="img-responsive">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="item">
+						<a href="#">
+							<img src="public/images/11_250x250.png" alt="" class="img-responsive">
+						</a>
+					</div>
+				</div>
+				<div class="butts">
+					<a href="#" class="active"></a>
+					<a href="#"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="last-banner-back">
+			<div class="last-banner">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="f-col">
+								<img src="public/images/logan-footer_200x.png" alt="" class="img-reponsive">
+								<p>
+									The world is a book and those who do not travel get to read only one page!
+								</p>
+
+								<ul>
+									<li>
+										<h6>
+											<i class="fas fa-home"></i>
+										</h6>
+										No: 58 A, East Madison Street,
+										<br>
+										Baltimore, MD, USA 4508
+									</li>
+									<li>
+										<h6>
+											<i class="fas fa-envelope"></i>
+										</h6>
+										<a href="#" class="mail">
+											tuananh0333@gmail.com
+										</a>
+									</li>
+									<li>
+										<h6>
+											<i class="fas fa-phone"></i>
+										</h6>
+										+84 163 202 5617
+									</li>
+									<li>
+										<h6>
+											<i class="fas fa-fax"></i>
+										</h6>
+										2542 2445 2566
+									</li>
+									<li style="margin-top: 15px">
+										<div class="row">
+											<div class="col-md-2">
+												<a href="#">
+													<div class="item">
+														<i class="fab fa-twitter"></i>
+													</div>
+												</a>
+											</div>
+											<div class="col-md-2">
+												<a href="#">
+													<div class="item">
+														<i class="fab fa-facebook-f"></i>
+													</div>
+												</a>
+											</div>
+											<div class="col-md-2">
+												<a href="#">
+													<div class="item">
+														<i class="fab fa-google"></i>
+													</div>
+												</a>
+											</div>
+											<div class="col-md-2">
+												<a href="#">
+													<div class="item">
+														<i class="fab fa-tumblr"></i>
+													</div>
+												</a>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="s-col">
+								<h4>
+									RECENT POSTS
+								</h4>
+								<ul>
+									<li>
+										<div class="row">
+											<div class="col-md-4" style="padding-right: 0">
+												<img src="public/images/blog12_small.jpg" alt="" class="img-responsive">
+											</div>
+											<div class="col-md-8">
+												<h5>
+													<a href="#">
+														The lone hiker on a trail...
+													</a>
+												</h5>
+												<p style="font-size: 12px">
+													<i class="fas fa-calendar-alt"></i>Feb 08 , 2018
+												</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="row">
+											<div class="col-md-4" style="padding-right: 0">
+												<img src="public/images/blog11_small.jpg" alt="" class="img-responsive">
+											</div>
+											<div class="col-md-8">
+												<h5>
+													<a href="#">
+														Negotiating a rope bridge
+													</a>
+												</h5>
+												<p style="font-size: 12px">
+													<i class="fas fa-calendar-alt"></i>Feb 08 , 2018
+												</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="row">
+											<div class="col-md-4" style="padding-right: 0">
+												<img src="public/images/blog10_small.jpg" alt="" class="img-responsive">
+											</div>
+											<div class="col-md-8">
+												<h5>
+													<a href="#">
+														Rock Climbing gears & ropes
+													</a>
+												</h5>
+												<p style="font-size: 12px">
+													<i class="fas fa-calendar-alt"></i>Feb 08 , 2018
+												</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="row">
+											<div class="col-md-4" style="padding-right: 0">
+												<img src="public/images/blog9_small.jpg" alt="" class="img-responsive">
+											</div>
+											<div class="col-md-8">
+												<h5>
+													<a href="#">
+														Climbing higher with backpacks...
+													</a>
+												</h5>
+												<p style="font-size: 12px">
+													<i class="fas fa-calendar-alt"></i>Feb 08 , 2018
+												</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="t-col">
+								<h4>
+									CATEGORIES
+								</h4>
+								<ul>
+									<li>
+										<div class="row">
+											<div class="col-md-10">
+												<a href="#" class="txt">
+													<span class="dot">
+														<i class="fas fa-circle"></i>
+													</span>
+													Search
+												</a>
+											</div>
+											<div class="col-md-1">
+												<a href="#" class="count">
+													[0]
+												</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="row">
+											<div class="col-md-10">
+												<a href="#" class="txt">
+													<span class="dot">
+														<i class="fas fa-circle"></i>
+													</span>
+													Advanced Search
+												</a>
+											</div>
+											<div class="col-md-1">
+												<a href="#" class="count">
+													[0]
+												</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="row">
+											<div class="col-md-10">
+												<a href="#" class="txt">
+													<span class="dot">
+														<i class="fas fa-circle"></i>
+													</span>
+													Orthers and Returns
+												</a>
+											</div>
+											<div class="col-md-1">
+												<a href="#" class="count">
+													[0]
+												</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="row">
+											<div class="col-md-10">
+												<a href="#" class="txt">
+													<span class="dot">
+														<i class="fas fa-circle"></i>
+													</span>
+													Consultant
+												</a>
+											</div>
+											<div class="col-md-1">
+												<a href="#" class="count">
+													[0]
+												</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="row">
+											<div class="col-md-10">
+												<a href="#" class="txt">
+													<span class="dot">
+														<i class="fas fa-circle"></i>
+													</span>
+													Help & FAQs
+												</a>
+											</div>
+											<div class="col-md-1">
+												<a href="#" class="count">
+													[0]
+												</a>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="fo-col">
+								<h4>
+									INSTAGRAM FEED
+								</h4>
+								<div class="row">
+									<div class="col-md-3">
+										<a href="#"><img src="public/images/13413422_1714634518799452_818598784_n.jpg" alt="" class="img-responsive"></a>
+									</div>
+									<div class="col-md-3">
+										<a href="#"><img src="public/images/13320302_142249169518674_1556243778_n.jpg" alt="" class="img-responsive"></a>
+									</div>
+									<div class="col-md-3">
+										<a href="#"><img src="public/images/13408734_910024489123413_215522311_n.jpg" alt="" class="img-responsive"></a>
+									</div>
+									<div class="col-md-3">
+										<a href="#"><img src="public/images/13414347_1643790659280756_943367349_n.jpg" alt="" class="img-responsive"></a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3">
+										<a href="#"><img src="public/images/13397638_1639001983089168_1786591532_n.jpg" alt="" class="img-responsive"></a>
+									</div>
+									<div class="col-md-3">
+										<a href="#"><img src="public/images/13298265_299203447085550_465362501_n.jpg" alt="" class="img-responsive"></a>
+									</div>
+									<div class="col-md-3">
+										<a href="#"><img src="public/images/13397569_676257762523728_173410013_n.jpg" alt="" class="img-responsive"></a>
+									</div>
+									<div class="col-md-3">
+										<a href="#"><img src="public/images/13355385_240635946310768_94575179_n.jpg" alt="" class="img-responsive"></a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3">
+										<a href="#"><img src="public/images/13298139_184132495318392_182790454_n.jpg" alt="" class="img-responsive"></a>
+									</div>
+									<div class="col-md-3">
+										<a href="#"><img src="public/images/13397463_1179100675448136_11921887_n.jpg" alt="" class="img-responsive"></a>
+									</div>
+									<div class="col-md-3">
+										<a href="#"><img src="public/images/13380989_491141381071688_1549806067_n.jpg" alt="" class="img-responsive"></a>
+									</div>
+									<div class="col-md-3">
+										<a href="#"><img src="public/images/13381426_943879572404869_1237980671_n.jpg" alt="" class="img-responsive"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copy-right">
+			<div class="container">
+				<p class="cpr">
+					Copyright &copy; 2018, Logan
+					<a href="#">
+						Powered by Tuan Anh
+					</a>
+				</p>
+				<div class="icons">
+					<a href="#"><img src="public/images/american-express-48_small.png" alt="" class="img-responsive"></a>
+					<a href="#"><img src="public/images/maestro-48_small.png" alt="" class="img-responsive"></a>
+					<a href="#"><img src="public/images/paypal-48_small.png" alt="" class="img-responsive"></a>
+					<a href="#"><img src="public/images/switch-48_small.png" alt="" class="img-responsive"></a>
+					<a href="#"><img src="public/images/cirrus-48_small.png" alt="" class="img-responsive"></a>
+					<a href="#"><img src="public/images/visa-48_small.png" alt="" class="img-responsive"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="go-top">
+		<i class="fas fa-arrow-up"></i>
+	</div>
+</body>
+</html>
